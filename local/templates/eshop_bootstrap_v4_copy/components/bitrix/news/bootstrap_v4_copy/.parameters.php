@@ -1,5 +1,7 @@
-<?
-if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+<?php
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) {
+	die();
+}
 
 use Bitrix\Main\ModuleManager;
 
@@ -132,4 +134,11 @@ $arTemplateParameters['TEMPLATE_THEME'] = array(
 	'VALUES' => $arThemes,
 	'DEFAULT' => 'blue',
 	'ADDITIONAL_VALUES' => 'Y',
+);
+
+$arTemplateParameters["USE_SPECIALDATE_PROPERTY"] = array(
+	"PARENT" => "ADDITIONAL_SETTINGS",
+	"NAME" => GetMessage("SET_SPECIALDATE_PROPERTY"),
+	"TYPE" => "CHECKBOX",
+	"DEFAULT" => "N",
 );
