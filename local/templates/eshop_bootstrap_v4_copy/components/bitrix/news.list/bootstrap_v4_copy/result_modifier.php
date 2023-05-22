@@ -191,3 +191,14 @@ $arResult["NAV_STRING"] = $arResult["NAV_RESULT"]->GetPageNavStringEx(
 	$this->__component,
 	$arResult["NAV_PARAM"]
 );
+
+/* SPECIALDATE */
+if ($arParams["USE_SPECIALDATE_PROPERTY"] === "Y") {
+	$firstNewsDate = null;
+	if ($arResult["ITEMS"]) {
+		$firstNewsDate = $arResult["ITEMS"][0]["TIMESTAMP_X"];
+		$cp = $this->__component;
+		$cp->arResult['SPECIALDATE'] = $firstNewsDate;
+		$cp->SetResultCacheKeys(array('SPECIALDATE'));
+	}
+}

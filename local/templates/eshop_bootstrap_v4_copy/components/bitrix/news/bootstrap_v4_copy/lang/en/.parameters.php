@@ -16,4 +16,5 @@ $MESS["TP_BN_THEME_GREEN"] = "green";
 $MESS["TP_BN_THEME_RED"] = "red";
 $MESS["TP_BN_THEME_YELLOW"] = "yellow";
 $MESS["TP_BN_TEMPLATE_THEME"] = "Color theme";
+$MESS["SET_SPECIALDATE_PROPERTY"] = "Set page property specialdate";
 ?>

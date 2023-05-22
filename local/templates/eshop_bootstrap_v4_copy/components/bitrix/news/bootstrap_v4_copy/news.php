@@ -55,7 +55,7 @@ $this->setFrameMode(true);
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
-	"bootstrap_v4",
+	"bootstrap_v4_copy",
 	Array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -131,6 +131,8 @@ $this->setFrameMode(true);
 		"SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
 
 		"TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
+		
+		"USE_SPECIALDATE_PROPERTY" => $arParams["USE_SPECIALDATE_PROPERTY"],
 	),
 	$component
 );?>
