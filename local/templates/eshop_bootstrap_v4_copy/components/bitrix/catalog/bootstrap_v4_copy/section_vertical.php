@@ -272,7 +272,7 @@ else
 
 	 	 $intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",
-					"bootstrap_v4", array(
+					"bootstrap_v4_copy", array(
 						"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 						"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 						"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
@@ -412,7 +412,7 @@ else
 							<div class="catalog-block-header" data-entity="header" data-showed="false" style="display: none; opacity: 0;">
 								<?=GetMessage('CATALOG_PERSONAL_RECOM')?>
 							</div>
-							<? $APPLICATION->IncludeComponent("bitrix:catalog.section", "bootstrap_v4", array(
+							<? $APPLICATION->IncludeComponent("bitrix:catalog.section", "bootstrap_v4_copy", array(
 									"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 									"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 									"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],

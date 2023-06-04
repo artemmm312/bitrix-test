@@ -1,6 +1,7 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use \Bitrix\Main\Localization\Loc;
+use Local\Lib\Label;
 
 /**
  * @global CMain $APPLICATION
@@ -117,6 +118,12 @@ use \Bitrix\Main\Localization\Loc;
 <? else: ?>
 	</span>
 <? endif; ?>
+	<div class="m-1 ">
+		<?php
+			$label = new Label();
+			$label->showLabels($item['PROPERTIES']['Label']['VALUE']);
+		?>
+	</div>
 	<h3 class="product-item-title">
 		<? if ($itemHasDetailUrl): ?>
 		<a href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$productTitle?>">
