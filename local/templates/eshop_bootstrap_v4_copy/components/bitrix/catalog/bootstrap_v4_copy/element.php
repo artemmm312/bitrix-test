@@ -218,7 +218,7 @@ $isSidebarLeft = isset($arParams['SIDEBAR_SECTION_POSITION']) && $arParams['SIDE
 			$componentElementParams['USER_CONSENT_IS_LOADED'] = $arParams['USER_CONSENT_IS_LOADED'];
 		}
 
-		$elementId = $APPLICATION->IncludeComponent('bitrix:catalog.element', 'bootstrap_v4', $componentElementParams,
+		$elementId = $APPLICATION->IncludeComponent('bitrix:catalog.element', 'bootstrap_v4_copy', $componentElementParams,
 			$component
 		);
 
@@ -430,7 +430,7 @@ $isSidebarLeft = isset($arParams['SIDEBAR_SECTION_POSITION']) && $arParams['SIDE
 							<div class="catalog-block-header" data-entity="header" data-showed="false" style="display: none; opacity: 0;">
 								<?=GetMessage('CATALOG_POPULAR_IN_SECTION')?>
 							</div>
-							<? $APPLICATION->IncludeComponent('bitrix:catalog.section', 'bootstrap_v4', array(
+							<? $APPLICATION->IncludeComponent('bitrix:catalog.section', 'bootstrap_v4_copy', array(
 									'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
 									'IBLOCK_ID' => $arParams['IBLOCK_ID'],
 									'SECTION_ID' => $arResult['VARIABLES']['SECTION_ID'],

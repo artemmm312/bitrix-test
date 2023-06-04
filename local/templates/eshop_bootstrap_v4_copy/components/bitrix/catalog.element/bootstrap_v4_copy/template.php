@@ -2,6 +2,7 @@
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 use Bitrix\Main\Localization\Loc;
+use Local\Lib\Label;
 
 /**
 * @global CMain $APPLICATION
@@ -324,6 +325,13 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 				{
 					?>
 					<div class="col-lg-5">
+						<div class="m-1 ">
+							<?php
+							//var_dump($arResult['PROPERTIES']['Label']['VALUE']);
+							$label = new Label();
+							$label->showLabels($arResult['PROPERTIES']['Label']['VALUE']);
+							?>
+						</div>
 						<?php
 						foreach ($arParams['PRODUCT_INFO_BLOCK_ORDER'] as $blockName)
 						{
