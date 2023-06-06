@@ -1,0 +1,22 @@
+Array
+(
+    [0] => Array
+        (
+            [ID] => 1
+            [NAME] => Обзор
+            [COLOR] => rgb(253,233,117)
+            [LINK] => #
+            [XML_ID] => M3DTqGX4
+        )
+
+    [1] => Array
+        (
+            [ID] => 2
+            [NAME] => Промокод на скидку
+            [COLOR] => rgb(181,255,177)
+            [LINK] => #
+            [XML_ID] => 2gqjA9hM
+        )
+
+)
+
